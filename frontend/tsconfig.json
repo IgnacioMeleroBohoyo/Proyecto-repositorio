@@ -13,3 +13,6 @@
     "strict": false
   }
 }
+
+cd "C:\Users\ignac\Documents\Proyectos_Spring_Boot\Trabajo1\proyecto1"
+mvn -DskipTests=true -Dspring-boot.run.jvmArguments="-Dspring.datasource.url=jdbc:h2:mem:testdb -Dspring.datasource.driverClassName=org.h2.Driver -Dspring.jpa.database-platform=org.hibernate.dialect.H2Dialect -Dspring.datasource.username=sa -Dspring.datasource.password=" spring-boot:run -f backend/pom.xml

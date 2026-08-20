@@ -1,0 +1,14 @@
+c:\Users\ignac\Documents\Proyectos_Spring_Boot\Trabajo1\proyecto1\backend\src\main\java\com\demo\dto\AuthRequest.java
+c:\Users\ignac\Documents\Proyectos_Spring_Boot\Trabajo1\proyecto1\backend\src\main\java\com\demo\repository\UserRepository.java
+c:\Users\ignac\Documents\Proyectos_Spring_Boot\Trabajo1\proyecto1\backend\src\main\java\com\demo\security\JwtUtils.java
+c:\Users\ignac\Documents\Proyectos_Spring_Boot\Trabajo1\proyecto1\backend\src\main\java\com\demo\model\User.java
+c:\Users\ignac\Documents\Proyectos_Spring_Boot\Trabajo1\proyecto1\backend\src\main\java\com\demo\service\CustomUserDetailsService.java
+c:\Users\ignac\Documents\Proyectos_Spring_Boot\Trabajo1\proyecto1\backend\src\main\java\com\demo\controller\HealthController.java
+c:\Users\ignac\Documents\Proyectos_Spring_Boot\Trabajo1\proyecto1\backend\src\main\java\com\demo\security\JwtAuthenticationFilter.java
+c:\Users\ignac\Documents\Proyectos_Spring_Boot\Trabajo1\proyecto1\backend\src\main\java\com\demo\service\AuthService.java
+c:\Users\ignac\Documents\Proyectos_Spring_Boot\Trabajo1\proyecto1\backend\src\main\java\com\demo\DemoApplication.java
+c:\Users\ignac\Documents\Proyectos_Spring_Boot\Trabajo1\proyecto1\backend\src\main\java\com\demo\config\SecurityConfig.java
+c:\Users\ignac\Documents\Proyectos_Spring_Boot\Trabajo1\proyecto1\backend\src\main\java\com\demo\controller\UserController.java
+c:\Users\ignac\Documents\Proyectos_Spring_Boot\Trabajo1\proyecto1\backend\src\main\java\com\demo\controller\AuthController.java
+c:\Users\ignac\Documents\Proyectos_Spring_Boot\Trabajo1\proyecto1\backend\src\main\java\com\demo\exception\GlobalExceptionHandler.java
+c:\Users\ignac\Documents\Proyectos_Spring_Boot\Trabajo1\proyecto1\backend\src\main\java\com\demo\security\RateLimitFilter.java

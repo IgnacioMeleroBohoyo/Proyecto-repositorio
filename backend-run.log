@@ -1,0 +1,149 @@
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.demo:demo-backend >------------------------
+[INFO] Building demo-backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.1.4:run (default-cli) > test-compile @ demo-backend >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ demo-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ demo-backend ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ demo-backend ---
+[INFO] skip non existing resourceDirectory c:\Users\ignac\Documents\Proyectos_Spring_Boot\Trabajo1\proyecto1\backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ demo-backend ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot:3.1.4:run (default-cli) < test-compile @ demo-backend <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.1.4:run (default-cli) @ demo-backend ---
+[INFO] Attaching agents: []
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+19:26:16,167 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.11
+19:26:16,170 |-INFO in ch.qos.logback.classic.util.ContextInitializer@31920ade - Here is a list of configurators discovered as a service, by rank: 
+19:26:16,172 |-INFO in ch.qos.logback.classic.util.ContextInitializer@31920ade -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+19:26:16,172 |-INFO in ch.qos.logback.classic.util.ContextInitializer@31920ade - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+19:26:16,172 |-INFO in ch.qos.logback.classic.util.ContextInitializer@31920ade - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+19:26:16,175 |-INFO in ch.qos.logback.classic.util.ContextInitializer@31920ade - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 0 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+19:26:16,175 |-INFO in ch.qos.logback.classic.util.ContextInitializer@31920ade - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+19:26:16,176 |-INFO in ch.qos.logback.classic.util.ContextInitializer@31920ade - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+19:26:16,178 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+19:26:16,178 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+19:26:16,178 |-INFO in ch.qos.logback.classic.util.ContextInitializer@31920ade - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 2 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+19:26:16,178 |-INFO in ch.qos.logback.classic.util.ContextInitializer@31920ade - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+19:26:16,178 |-INFO in ch.qos.logback.classic.util.ContextInitializer@31920ade - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+19:26:16,179 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+19:26:16,179 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+19:26:16,179 |-INFO in ch.qos.logback.classic.util.ContextInitializer@31920ade - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+19:26:16,179 |-INFO in ch.qos.logback.classic.util.ContextInitializer@31920ade - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+19:26:16,179 |-INFO in ch.qos.logback.classic.util.ContextInitializer@31920ade - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+19:26:16,179 |-INFO in ch.qos.logback.classic.BasicConfigurator@1d483de4 - Setting up default configuration.
+19:26:16,198 |-INFO in ch.qos.logback.classic.util.ContextInitializer@31920ade - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 19 milliseconds. ExecutionStatus=NEUTRAL
+19:26:16,541 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ROLLING]
+19:26:16,541 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+19:26:16,559 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1077072774 - No compression will be used
+19:26:16,561 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1077072774 - Will use the pattern ./logs/app.%d{yyyy-MM-dd}.%i.log for the active file
+19:26:16,573 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@28d18df5 - The date pattern is 'yyyy-MM-dd' from file name pattern './logs/app.%d{yyyy-MM-dd}.%i.log'.
+19:26:16,573 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@28d18df5 - Roll-over at midnight.
+19:26:16,578 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@28d18df5 - Setting initial period to 2026-08-20T17:25:56.878Z
+19:26:16,578 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@28d18df5 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+19:26:16,578 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@28d18df5 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+19:26:16,579 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+19:26:16,589 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING] - Active log file name: ./logs/app.log
+19:26:16,589 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING] - File property is set to [./logs/app.log]
+19:26:16,591 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+19:26:16,591 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@934b6cb - Propagating INFO level on Logger[ROOT] onto the JUL framework
+19:26:16,591 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ROLLING] to Logger[ROOT]
+19:26:16,591 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@55cf0d14 - End of configuration.
+19:26:16,591 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@3b74ac8 - Registering current configuration as safe fallback point
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.4)
+
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/ignac/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.13/tomcat-embed-core-10.1.13.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.063 s
+[INFO] Finished at: 2026-08-20T19:26:19+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.1.4:run (default-cli) on project demo-backend: Process terminated with exit code: 1 -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.1.4:run (default-cli) on project demo-backend: Process terminated with exit code: 1
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:333)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:919)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:285)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:207)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:362)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+Caused by: org.apache.maven.plugin.MojoExecutionException: Process terminated with exit code: 1
+    at org.springframework.boot.maven.JavaProcessExecutor.run (JavaProcessExecutor.java:74)
+    at org.springframework.boot.maven.RunMojo.run (RunMojo.java:76)
+    at org.springframework.boot.maven.AbstractRunMojo.run (AbstractRunMojo.java:229)
+    at org.springframework.boot.maven.AbstractRunMojo.execute (AbstractRunMojo.java:196)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:919)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:285)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:207)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:362)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
