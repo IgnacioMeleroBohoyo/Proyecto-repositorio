@@ -20,7 +20,6 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -37,11 +36,20 @@ jobs:
         working-directory: frontend
         run: npm install
 
+      - name: Set API URL
+        working-directory: frontend
+        env:
+          API_URL: ${{ vars.API_URL }}
+        run: |
+          sed -i "s|__API_URL__|$API_URL|g" src/environments/environment.production.ts
+
       - name: Build Angular app
         working-directory: frontend
-        run: npm run build -- --base-href "/${{ github.event.repository.name }}/"
+        run: |
+          sed -i "s|__REPOSITORY_NAME__|${{ github.event.repository.name }}|g" angular.json
+          npx ng build --configuration production,github-pages
 
-      - name: Support Angular routes
+      - name: Support Angular routes on Pages
         run: cp frontend/dist/demo-frontend/index.html frontend/dist/demo-frontend/404.html
 
       - name: Upload Pages artifact
@@ -52,3 +60,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
