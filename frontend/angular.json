@@ -3,7 +3,8 @@
   "version": 1,
   "projects": {
     "demo-frontend": {
-      "projectType": "application",
+     "projectType": "application",
+"root": "",
       "sourceRoot": "src",
       "architect": {}
     }
