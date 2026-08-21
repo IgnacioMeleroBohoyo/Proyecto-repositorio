@@ -39,6 +39,24 @@ Variables de entorno útiles (docker-compose ya las inyecta):
 
 - `SPRING_DATASOURCE_URL`, `SPRING_DATASOURCE_USERNAME`, `SPRING_DATASOURCE_PASSWORD`
 - `JWT_SECRET` (cambiar para producción)
+- `CORS_ALLOWED_ORIGINS` (orígenes permitidos separados por comas)
+
+Despliegue usando GitHub Pages
+
+GitHub Pages solo ejecuta el frontend estático. El backend y PostgreSQL deben ejecutarse
+en un servicio externo compatible con Docker, por ejemplo Render, Railway o Azure.
+
+1. Publica este repositorio en GitHub.
+2. Despliega `backend/` y PostgreSQL en tu proveedor, configura
+   `CORS_ALLOWED_ORIGINS` con la URL final de GitHub Pages y copia la URL HTTPS del
+   backend, por ejemplo `https://mi-backend.example.com`.
+3. En GitHub, abre `Settings > Secrets and variables > Actions > Variables` y crea
+   `API_URL` con esa URL, sin terminar en `/`.
+4. En `Settings > Pages`, selecciona `GitHub Actions` como fuente de publicación.
+
+El workflow `.github/workflows/deploy-pages.yml` construirá y publicará Angular
+automáticamente en cada push a `main`. La URL será
+`https://TU_USUARIO.github.io/NOMBRE_DEL_REPOSITORIO/`.
 
 Desarrollo del frontend (servidor dev con proxy a backend):
 
